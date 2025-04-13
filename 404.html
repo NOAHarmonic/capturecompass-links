@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spot-Weiterleitung</title>
+    <script>
+      const path = window.location.pathname;
+      const spotId = path.split("/").pop();
+
+      // Fallback-URL, z. B. zum App Store
+      const fallbackURL = "https://apps.apple.com/app/id6743887034";
+
+      // Universal Link zur App (der auch bei iOS greifen soll)
+      const appLink = `https://links.ninokeller.de/spot/${spotId}`;
+
+      // Falls App installiert → iOS springt direkt um
+      // Falls nicht → Weiterleitung zur App Store Seite
+      window.location.replace(fallbackURL);
+    </script>
+  </head>
+  <body>
+    <p>Du wirst weitergeleitet…</p>
+  </body>
+</html>
