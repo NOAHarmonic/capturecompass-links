@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4UYPRFV7S4.com.NinoKeller.CaptureCompass",
+        "paths": [
+          "/privacy",
+          "/spot/*",
+          "/favorites",
+          "/settings"
+        ]
+      }
+    ]
+  }
+}
